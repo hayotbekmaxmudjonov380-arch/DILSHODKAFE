@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kafe Restoran Dilshod - Xonqadagi milliy va yevropa taomlari, shinam oilaviy muhit va tezkor xizmat. Stolni oldindan band qiling!">
+  <title>Kafe Restoran Dilshod | Xonqa - Milliy va Yevropa Taomlari</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Ambient Glows -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- NAVIGATION BAR -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-gold">DILSHOD</span>
+        <span class="logo-sub">KAFE & RESTORAN</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#hero" class="nav-link active">Bosh sahifa</a>
+        <a href="#menu" class="nav-link">Menyu</a>
+        <a href="#about" class="nav-link">Biz haqimizda</a>
+        <a href="#ambience" class="nav-link">Muhit & Topchanlar</a>
+        <a href="#reservation" class="nav-link">Bron qilish</a>
+        <a href="#contact" class="nav-link">Aloqa</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="tel:+998901234567" class="phone-chip">
+          <i class="fa-solid fa-phone-volume"></i>
+          <span>+998 (90) 123-45-67</span>
+        </a>
+        <a href="#reservation" class="btn btn-primary nav-cta">
+          <span>Stol band qilish</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 1. HERO SECTION -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-grid">
+      <!-- Hero Text Content -->
+      <div class="hero-content">
+        <div class="badge-pill">
+          <span class="pulse-dot"></span>
+          <span>Xonqa shahrida eng shinam oilaviy restoran</span>
+        </div>
+        
+        <h1 class="hero-title">
+          Haqiqiy Milliy & Yevropa <br>
+          <span class="text-gradient">Taomlarining Lazzati</span>
+        </h1>
+        
+        <p class="hero-subtitle">
+          Kafe Restoran Dilshod — xushbo'y shashliklar, an'anaviy to'y oshi, nozik yevropa taomlari va samimiy mehmondo'stlik maskani. Oilangiz va do'stlaringiz bilan betakror daqiqalarni his eting.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#reservation" class="btn btn-primary btn-glow">
+            <i class="fa-solid fa-calendar-check"></i>
+            <span>Stolni bron qilish</span>
+          </a>
+          <a href="#menu" class="btn btn-secondary">
+            <i class="fa-solid fa-utensils"></i>
+            <span>Menyuni ko'rish</span>
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-card">
+            <span class="stat-num">4.9 <i class="fa-solid fa-star text-gold"></i></span>
+            <span class="stat-label">500+ Mehmonlar bahosi</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-card">
+            <span class="stat-num">80+</span>
+            <span class="stat-label">Xil maxsus taomlar</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-card">
+            <span class="stat-num">23:00</span>
+            <span class="stat-label">Gacha xizmat ko'rsatish</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual (3D Tilt Card & Realistic Composition) -->
+      <div class="hero-visual-wrapper">
+        <div class="hero-card-3d" id="heroTiltCard">
+          <div class="card-inner-glow"></div>
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=85" 
+               alt="Kafe Restoran Dilshod - Mazali milliy va yevropa taomlari" 
+               class="hero-img">
+          <div class="hero-card-overlay">
+            <div class="floating-badge badge-top">
+              <i class="fa-solid fa-fire-flame-curved"></i>
+              <div>
+                <strong>Ochiq olovda shashlik</strong>
+                <small>Haqiqiy qo'zi go'shti</small>
+              </div>
+            </div>
+            <div class="floating-badge badge-bottom">
+              <i class="fa-solid fa-clock"></i>
+              <div>
+                <strong>Hozir ochiq</strong>
+                <small>Bugun 23:00 gacha</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. MENU PREVIEW SECTION -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="badge-pill">
+          <i class="fa-solid fa-book-open"></i>
+          <span>Mazali Tanlov</span>
+        </div>
+        <h2 class="section-title">Bizning Maxsus Menyuyimiz</h2>
+        <p class="section-desc">Har bir taom eng sara mahsulotlardan, professional oshpazlarimiz mahorati bilan tayyorlanadi.</p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="category-tabs" id="categoryTabs">
+        <button class="tab-btn active" data-category="all">
+          <i class="fa-solid fa-border-all"></i> Barchasi
+        </button>
+        <button class="tab-btn" data-category="national">
+          <i class="fa-solid fa-bowl-food"></i> Milliy taomlar
+        </button>
+        <button class="tab-btn" data-category="fastfood">
+          <i class="fa-solid fa-burger"></i> Fast-food
+        </button>
+        <button class="tab-btn" data-category="drinks">
+          <i class="fa-solid fa-mug-hot"></i> Ichimliklar
+        </button>
+        <button class="tab-btn" data-category="desserts">
+          <i class="fa-solid fa-cake-candles"></i> Desertlar
+        </button>
+      </div>
+
+      <!-- Menu Grid Items -->
+      <div class="menu-grid" id="menuGrid">
+        
+        <!-- Dish 1: Shashlik (National) -->
+        <div class="menu-card" data-category="national">
+          <div class="menu-img-wrap">
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80" 
+                 alt="Juicy skewered shashlik" class="menu-img">
+            <span class="menu-tag">Hit Taom</span>
+          </div>
+          <div class="menu-body">
+            <div class="menu-header-line">
+              <h3 class="menu-item-title">Maxsus Qo'y Go'shti Shashligi</h3>
+              <span class="menu-price">22,000 so'm</span>
+            </div>
+            <p class="menu-desc">Yumshoq marinadlangan qo'y go'shti, mayin piyoz, rayhon va xushbo'y ziravorlar bilan sixda qovurilgan.</p>
+            <div class="menu-footer">
+              <span class="prep-time"><i class="fa-regular fa-clock"></i> 15-20 daqiqa</span>
+              <button class="btn-order" onclick="openOrderModal('Maxsus Shashlik', '22,000 so\'m')">
+                <i class="fa-solid fa-plus"></i> Buyurtma
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dish 2: Traditional Uzbek Plov (National) -->
+        <div class="menu-card" data-category="national">
+          <div class="menu-img-wrap">
+            <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80" 
+                 alt="Traditional Uzbek plov in lagan" class="menu-img">
+            <span class="menu-tag gold-tag">Chef Tavsiyasi</span>
+          </div>
+          <div class="menu-body">
+            <div class="menu-header-line">
+              <h3 class="menu-item-title">An'anaviy To'y Oshi (Palov)</h3>
+              <span class="menu-price">35,000 so'm</span>
+            </div>
+            <p class="menu-desc">Devzira guruch, barra mol go'shti, sariq sabzi, no'xat, mayiz va sarimsoqpiyoz bilan tayyorlangan shohona osh.</p>
+            <div class="menu-footer">
+              <span class="prep-time"><i class="fa-regular fa-clock"></i> Tayyor</span>
+              <button class="btn-order" onclick="openOrderModal('To\'y Oshi', '35,000 so\'m')">
+                <i class="fa-solid fa-plus"></i> Buyurtma
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dish 3: Fast-Food / Dilshod Burger -->
+        <div class="menu-card" data-category="fastfood">
+          <div class="menu-img-wrap">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80" 
+                 alt="Gourmet Dilshod Burger" class="menu-img">
+            <span class="menu-tag">Top Fast-food</span>
+          </div>
+          <div class="menu-body">
+            <div class="menu-header-line">
+              <h3 class="menu-item-title">Dilshod Special Burger & Fri</h3>
+              <span class="menu-price">38,000 so'm</span>
+            </div>
+            <p class="menu-desc">Shirador mol go'shti kotleti, erigan cheddar pishlog'i, qarsildoq bodring, maxsus sous va oltin kartoshka fri.</p>
+            <div class="menu-footer">
+              <span class="prep-time"><i class="fa-regular fa-clock"></i> 10-15 daqiqa</span>
+              <button class="btn-order" onclick="openOrderModal('Dilshod Special Burger', '38,000 so\'m')">
+                <i class="fa-solid fa-plus"></i> Buyurtma
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dish 4: Drinks / Iced Coffee with Caramel -->
+        <div class="menu-card" data-category="drinks">
+          <div class="menu-img-wrap">
+            <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=800&q=80" 
+                 alt="Refreshing iced coffee with caramel drizzle" class="menu-img">
+            <span class="menu-tag">Muzdek</span>
+          </div>
+          <div class="menu-body">
+            <div class="menu-header-line">
+              <h3 class="menu-item-title">Karamelli Muzli Qahva (Iced Latte)</h3>
+              <span class="menu-price">20,000 so'm</span>
+            </div>
+            <p class="menu-desc">Yangi maydalangan arabika espresso, sovuq sut, qaymoqli ko'pik va tabiiy karamel sousi bilan muzli tetiklik.</p>
+            <div class="menu-footer">
+              <span class="prep-time"><i class="fa-regular fa-clock"></i> 5 daqiqa</span>
+              <button class="btn-order" onclick="openOrderModal('Karamelli Muzli Qahva', '20,000 so\'m')">
+                <i class="fa-solid fa-plus"></i> Buyurtma
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dish 5: Desserts / Tiramisu / San Sebastian -->
+        <div class="menu-card" data-category="desserts">
+          <div class="menu-img-wrap">
+            <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=800&q=80" 
+                 alt="San Sebastian Cheesecake with Belgian Chocolate" class="menu-img">
+            <span class="menu-tag gold-tag">Shirinlik</span>
+          </div>
+          <div class="menu-body">
+            <div class="menu-header-line">
+              <h3 class="menu-item-title">Ispancha San-Sebastian Chizkeyk</h3>
+              <span class="menu-price">28,000 so'm</span>
+            </div>
+            <p class="menu-desc">Mayin eruvchan pishloqli qatlam, issiq Belgiya shokoladi bilan boyitilgan nozik yevropacha desert.</p>
+            <div class="menu-footer">
+              <span class="prep-time"><i class="fa-regular fa-clock"></i> Tayyor</span>
+              <button class="btn-order" onclick="openOrderModal('San-Sebastian Chizkeyk', '28,000 so\'m')">
+                <i class="fa-solid fa-plus"></i> Buyurtma
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dish 6: National / Tandir Somsa & Non -->
+        <div class="menu-card" data-category="national">
+          <div class="menu-img-wrap">
+            <img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?auto=format&fit=crop&w=800&q=80" 
+                 alt="Fresh hot Tandir Somsa" class="menu-img">
+            <span class="menu-tag">Issiqqina</span>
+          </div>
+          <div class="menu-body">
+            <div class="menu-header-line">
+              <h3 class="menu-item-title">Xonqa Tandir Somsasi</h3>
+              <span class="menu-price">12,000 so'm</span>
+            </div>
+            <p class="menu-desc">Tandirda qizargan qarsildoq qatlama xamir, maydalangan go'sht va dumba yog'ining betakror shiraligi.</p>
+            <div class="menu-footer">
+              <span class="prep-time"><i class="fa-regular fa-clock"></i> Issiq</span>
+              <button class="btn-order" onclick="openOrderModal('Tandir Somsa', '12,000 so\'m')">
+                <i class="fa-solid fa-plus"></i> Buyurtma
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. ABOUT US & AMBIENCE SECTION -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Visual Column -->
+        <div class="about-visuals" id="ambience">
+          <div class="main-ambience-card">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80" 
+                 alt="Cozy family-friendly outdoor dining with Uzbek topchans" class="ambience-main-img">
+            <div class="ambience-glass-tag">
+              <i class="fa-solid fa-couch"></i>
+              <span>An'anaviy Topchanlar & Zamonaviy Zal</span>
+            </div>
+          </div>
+          <div class="sub-ambience-grid">
+            <div class="sub-img-card">
+              <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=600&q=80" alt="Clean cozy environment">
+              <span class="sub-caption">Shinam kabinalar</span>
+            </div>
+            <div class="sub-img-card">
+              <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=600&q=80" alt="Evening lighting ambience">
+              <span class="sub-caption">Kechki romantik chiroqlar</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Description Column -->
+        <div class="about-info">
+          <div class="badge-pill">
+            <i class="fa-solid fa-heart"></i>
+            <span>Nega aynan Dilshod Kafe?</span>
+          </div>
+
+          <h2 class="section-title">Oilangiz Uchun Shinamlik Va Pokiza Muhit</h2>
+          
+          <p class="about-lead">
+            Biz shunchaki ovqatlanish joyi emasmiz — biz oilaviy shodliklar, do'stona suhbatlar va tantanalar nishonlanadigan iliq go'shamiz.
+          </p>
+
+          <div class="features-list">
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fa-solid fa-couch"></i>
+              </div>
+              <div class="feature-text">
+                <h4>Shinam Oilaviy Topchanlar va Kabinalar</h4>
+                <p>Yumshoq ko'rpachalar, milliy bezaklar va sokin suhbat uchun alohida ajratilgan xonalar.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fa-solid fa-spray-can-sparkles"></i>
+              </div>
+              <div class="feature-text">
+                <h4>100% Pokiza va Toza Muhit</h4>
+                <p>Ochiq oshxona sanitariya talablariga to'liq javob beradi, har bir stol har bir mehmon oldidan steril tozalanadi.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fa-solid fa-motorcycle"></i>
+              </div>
+              <div class="feature-text">
+                <h4>Tezkor Yetkazib Berish (Dostavka)</h4>
+                <p>Xonqa bo'ylab issiq taomlar 30-40 daqiqa ichida termobokslarda eshigingizgacha yetkaziladi.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fa-solid fa-square-parking"></i>
+              </div>
+              <div class="feature-text">
+                <h4>Keng va Xavfsiz Avtoturargoh</h4>
+                <p>Mehmonlarimiz avtomobillari uchun bepul, videokuzatuv ostidagi qulay avtoturargoh mavjud.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. CONTACT & RESERVATION SECTION -->
+  <section class="reservation-section" id="reservation">
+    <div class="container">
+      <div class="reservation-card-wrap">
+        <div class="res-glow-accent"></div>
+        <div class="reservation-grid">
+          
+          <!-- Booking Form -->
+          <div class="reservation-form-box">
+            <div class="badge-pill">
+              <i class="fa-solid fa-bell-concierge"></i>
+              <span>Onlayn Bron Qilish</span>
+            </div>
+            <h2 class="form-title">Stolni Oldindan Band Qiling</h2>
+            <p class="form-sub">Kechki va dam olish kunlari joylar cheklangan. Stolingizni hoziroq bepul bron qiling!</p>
+
+            <form id="reservationForm" onsubmit="handleReservationSubmit(event)">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="resName"><i class="fa-regular fa-user"></i> Ismingiz</label>
+                  <input type="text" id="resName" placeholder="Masalan: Sardorbek" required>
+                </div>
+                <div class="form-group">
+                  <label for="resPhone"><i class="fa-solid fa-phone"></i> Telefon raqamingiz</label>
+                  <input type="tel" id="resPhone" placeholder="+998 (90) 123-45-67" required>
+                </div>
+              </div>
+
+              <div class="form-row three-cols">
+                <div class="form-group">
+                  <label for="resDate"><i class="fa-regular fa-calendar"></i> Sana</label>
+                  <input type="date" id="resDate" required>
+                </div>
+                <div class="form-group">
+                  <label for="resTime"><i class="fa-regular fa-clock"></i> Vaqt</label>
+                  <input type="time" id="resTime" required value="19:00">
+                </div>
+                <div class="form-group">
+                  <label for="resGuests"><i class="fa-solid fa-users"></i> Mehmonlar soni</label>
+                  <select id="resGuests">
+                    <option value="1-2">1 - 2 kishi</option>
+                    <option value="3-4" selected>3 - 4 kishi</option>
+                    <option value="5-8">5 - 8 kishi (Katta stol)</option>
+                    <option value="8+">8+ kishi (Topchan / Kabina)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="resNotes"><i class="fa-regular fa-message"></i> Qo'shimcha istaklar (ixtiyoriy)</label>
+                <textarea id="resNotes" rows="2" placeholder="Masalan: Ochiq havodagi topchan bo'lsin, bolalar o'rindig'i kerak..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit-res">
+                <span>Stolni Tasdiqlash & Bron Qilish</span>
+                <i class="fa-solid fa-check-circle"></i>
+              </button>
+            </form>
+          </div>
+
+          <!-- Location & Working Hours Info -->
+          <div class="location-info-box" id="contact">
+            <div class="info-card-inner">
+              <h3 class="info-box-title">Bizning Manzil & Ish Vaqti</h3>
+              <p class="info-desc">Sizni har kuni shinam kafemizda iliq kutib olishdan mamnunmiz.</p>
+
+              <div class="info-details-list">
+                <div class="info-detail-item">
+                  <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+                  <div>
+                    <strong>Manzil:</strong>
+                    <p>O'zbekiston, Xorazm viloyati, Xonqa tumani markazi, Al-Xorazmiy ko'chasi</p>
+                  </div>
+                </div>
+
+                <div class="info-detail-item">
+                  <div class="detail-icon"><i class="fa-solid fa-clock"></i></div>
+                  <div>
+                    <strong>Ish Vaqti:</strong>
+                    <p>Har kuni: <span class="text-gold font-bold">09:00 — 23:00</span> gacha</p>
+                    <small class="badge-status-open"><i class="fa-solid fa-circle"></i> Hozir ochiq</small>
+                  </div>
+                </div>
+
+                <div class="info-detail-item">
+                  <div class="detail-icon"><i class="fa-solid fa-phone"></i></div>
+                  <div>
+                    <strong>Telefonlar:</strong>
+                    <p><a href="tel:+998901234567">+998 (90) 123-45-67</a></p>
+                    <p><a href="tel:+998919876543">+998 (91) 987-65-43</a></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="direct-booking-actions">
+                <a href="https://t.me/" target="_blank" class="btn-channel telegram-btn">
+                  <i class="fa-brands fa-telegram"></i> Telegram orqali yozish
+                </a>
+                <a href="tel:+998901234567" class="btn-channel call-btn">
+                  <i class="fa-solid fa-phone"></i> Tezkor qo'ng'iroq
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#hero" class="nav-logo">
+          <span class="logo-gold">DILSHOD</span>
+          <span class="logo-sub">KAFE & RESTORAN</span>
+        </a>
+        <p>Xonqadagi haqiqiy mehmondo'stlik va shirin taomlar maskani. Siz va oilangiz uchun eng yuqori sifatli xizmat.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Bo'limlar</h4>
+        <ul>
+          <li><a href="#hero">Bosh sahifa</a></li>
+          <li><a href="#menu">Bizning Menyu</a></li>
+          <li><a href="#about">Biz haqimizda</a></li>
+          <li><a href="#ambience">Topchanlar & Muhit</a></li>
+          <li><a href="#reservation">Stol band qilish</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Taomlar</h4>
+        <ul>
+          <li><a href="#menu">Qo'y go'shti shashlik</a></li>
+          <li><a href="#menu">To'y oshi (Palov)</a></li>
+          <li><a href="#menu">Xonqa tandir somsasi</a></li>
+          <li><a href="#menu">Special Burgerlar</a></li>
+          <li><a href="#menu">Kofe & Shirinliklar</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Bog'lanish</h4>
+        <p><i class="fa-solid fa-location-dot"></i> Xonqa, Xorazm, O'zbekiston</p>
+        <p><i class="fa-solid fa-phone"></i> +998 (90) 123-45-67</p>
+        <p><i class="fa-solid fa-clock"></i> 09:00 - 23:00</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p>&copy; 2026 Kafe Restoran Dilshod. Barcha huquqlar himoyalangan.</p>
+        <p>Designed with High-End Motion & Modern UX</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Quick Booking Widget -->
+  <a href="#reservation" class="floating-quick-res" id="floatingResBtn" title="Stolni bron qilish">
+    <i class="fa-solid fa-calendar-check"></i>
+    <span class="floating-tooltip">Stol band qilish</span>
+  </a>
+
+  <!-- SUCCESS MODAL POPUP -->
+  <div class="modal-overlay" id="successModal">
+    <div class="modal-card">
+      <div class="modal-icon">
+        <i class="fa-solid fa-check"></i>
+      </div>
+      <h3 class="modal-title">Stolingiz Muvaffaqiyatli Band Qilindi!</h3>
+      <p class="modal-text" id="modalConfirmationText">
+        Hurmatli mehmon, sizning buyurtmangiz qabul qilindi. Tez orada administratorimiz siz bilan tasdiqlash uchun bog'lanadi.
+      </p>
+      <div class="modal-info-summary" id="modalSummary"></div>
+      <button class="btn btn-primary btn-modal-close" onclick="closeSuccessModal()">
+        <span>Tushunarli, Rahmat!</span>
+      </button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
